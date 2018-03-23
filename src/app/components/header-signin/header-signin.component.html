@@ -1,0 +1,61 @@
+<section class="enquiry">
+  <div class="row" style="margin:0 auto;">
+    <div class="clear-both col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="clear-both col-xs-12 col-sm-4 col-md-6 col-lg-4" style="margin: 0px;">
+        <div class="row">
+          <img src="assets/images/logo.png">
+          <a class="no" href="tel:09845166313" style="font-size: 28px;color: #07e70fde;">+91 - 9845166313</a>
+          <p style="color: #FFF;font-size: 15px;margin-bottom: 0px;margin-top: -21px;margin-left: -14px;text-decoration: underline;">Shifting-Domestic &amp; International</p>
+        </div>
+      </div>
+      <div class="clear-both col-xs-12 col-sm-8 col-md-6 col-lg-8" style="float: right;">
+        <div class="enquiry-form" style="padding: 0; margin-top: 8px;">
+          <form action="surveyform.html" enctype="multipart/form-data" method="post" name="form" novalidate="" onsubmit="return Form2_Validator(this)"
+            class="ng-untouched ng-pristine ng-valid">
+            <ul>
+              <li>
+                <input id="Name" name="S_name" onblur="requiredFieldValidation('Name','nerrorMSGdiv');validadeName('Name','nerrorMSGdiv');"
+                  placeholder="Name*" type="text" [(ngModel)]="enquiryRequestForm.name">
+                <span id="nerrorMSGdiv" style="font-size: 12px;"></span>
+                <span></span>
+              </li>
+              <li>
+                <input id="Mobile No" maxlength="10" name="S_phone" onblur="requiredFieldValidation('Mobile No','mnerrorMSGdiv');validateMobileno('Mobile No','mnerrorMSGdiv');"
+                  onkeypress="return numbersonly(event,false)" placeholder="Mobile No*" type="text" [(ngModel)]="enquiryRequestForm.mobile">
+                <span id="mnerrorMSGdiv" style="font-size: 12px;"></span>
+                <span></span>
+              </li>
+              <li>
+                <input id="Email ID" name="S_email" onblur="requiredFieldValidation('Email ID','eerrorMSGdiv');verifyEmailId('Email ID','eerrorMSGdiv');"
+                  placeholder="Email Address*" type="text" [(ngModel)]="enquiryRequestForm.email">
+                <span id="eerrorMSGdiv" style="font-size: 12px;"></span>
+                <span></span>
+              </li>
+              <li>
+                <input id="auto1" name="Location_form" onblur="checkaghlcity('auto1','fcmeMsg');" placeholder="Location From*" type="text"
+                  [(ngModel)]="enquiryRequestForm.from">
+                <span id="fcmeMsg" style="font-size: 12px;"></span>
+              </li>
+              <li>
+                <input id="auto2" name="Location_to" onblur="checkaghlcity('auto2','tcmeMsg');" placeholder="Location To*" type="text" [(ngModel)]="enquiryRequestForm.to">
+                <span id="tcmeMsg" style="font-size: 12px;"></span>
+              </li>
+              <li>
+                <input id="submit1" name="" type="submit" value="Submit" (click)="enquiryRequest()">
+                <span></span>
+              </li>
+              <input name="Subject" type="hidden" value="Expert Packers &amp; Movers Coimbatore">
+              <input name="native_captcha" type="hidden" value="1">
+              <input name="required" type="HIDDEN" value="S_name,S_email,S_mobile,Location_form,Location_to,captcha_text">
+              <input name="redirect" type="hidden" value="thankyou.html">
+              <input name="modid" type="HIDDEN" value="WSITE">
+              <input name="gluser_id" type="HIDDEN" value="2075928">
+              <input name="S_country" type="HIDDEN" value="IN">
+              <input id="captcha_text" name="captcha_text" type="hidden" value="FIX">
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

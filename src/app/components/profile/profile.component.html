@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <i class="fa fa-user-circle" style="font-size: 35px;margin-right: 5px;color: #4d1e7b;"></i>Profile</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
+                            <table class="table table-user-information">
+                                <tbody>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>
+                                            <input [(ngModel)]="updatePrfileTO.name" class="form-control" style="width:270px" maxlength="60">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile Number</td>
+                                        <td>
+                                            <input [(ngModel)]="updatePrfileTO.mobile" class="form-control" style="width:270px" maxlength="12">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Landline Number</td>
+                                        <td>
+                                            <input [(ngModel)]="updatePrfileTO.landline" class="form-control" style="width:270px" maxlength="15">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>
+                                            <input [(ngModel)]="updatePrfileTO.email" class="form-control" style="width:270px" maxlength="150">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td>
+                                            <textarea [(ngModel)]="updatePrfileTO.address" class="form-control" style="width:270px" cols="80" rows="4"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="button" class="btn btn-login" value="Update" (click)="updateProfile()" style="width:200px">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

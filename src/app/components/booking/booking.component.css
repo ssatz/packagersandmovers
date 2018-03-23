@@ -1,0 +1,16 @@
+.tracking-table td{
+    padding: 2px !important;
+}
+
+@media (max-width: 420px){
+    .booking.container{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .booking .email,.booking .to-address,.booking .receiver,.booking .pickup-time {
+        width: 100% !important;
+        margin-top: 13px !important;
+        border-top: 2px solid #e6e1da !important;
+    }
+}

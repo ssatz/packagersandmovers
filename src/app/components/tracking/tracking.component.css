@@ -1,0 +1,530 @@
+#tracking .clear {
+	clear:both;
+}
+.table-user-information.tracking-table td, .table-user-information.tracking-table thead th{
+	border:2px solid #c1a9a9;
+}
+.table-user-information.tracking-table tbody tr:hover{
+	background-color: #efe9e2;
+}
+
+#tracking .header {
+	margin-top:2%;
+	width:100%;
+	text-align:center;
+}
+#tracking .header h1 {
+	font-family: 'Open Sans', sans-serif;
+	line-height:25px;
+	text-transform:uppercase;
+	color:grey;
+}
+#tracking .content{
+	width:90%;
+	margin:3% auto 0 auto;
+	height:230px;
+	background-color:#F5F5F5;
+}
+#tracking .content1 {
+	background-color:#98d091;
+	text-align:center;
+	padding:5px;
+}
+#tracking .content1 h2 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform:uppercase;
+	margin:0;
+	color:#fff;
+}
+#tracking .content2 {
+	background-color:#b5e6ae;
+}
+#tracking .content2-header1 {
+	float:left;
+	width:27%;
+	text-align:center;
+	padding:1.5em;
+}
+#tracking .content2-header1 p {
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	font-weight:700;
+	color:#4E7D48;
+	margin:0;
+}
+#tracking .content2-header1 span {
+	font-size:14px;
+	font-weight:400;
+}
+#tracking .shipment {
+	width:100%;
+	margin-top:10%;
+}
+#tracking span.line {
+    height: 5px;
+    width: 90px;
+    background-color:#F5998E;
+    display: block;
+    position: absolute;
+    top: 28%;
+    left: 45%;
+}
+#tracking .confirm{
+	text-align:center;
+	width:20%;
+	position:relative;
+	float:left;
+	margin-left:5%;
+}
+#tracking .confirm .imgcircle , .process .imgcircle, .quality .imgcircle {
+	background-color:#98D091;
+}
+.confirm span.line, .process span.line {
+	background-color:#98D091; 
+}
+#tracking .content3 p {
+	margin-left:-50%;
+	font-size:15px;
+	font-weight:600;
+} 
+#tracking .imgcircle {
+	height:75px;
+	width:75px;
+	border-radius:50%;
+	background-color:#F5998E;
+	position:relative;
+}
+#tracking .imgcircle img {
+	height:30px;
+	position:absolute;
+	top: 28%;
+	left: 30%;
+}
+#tracking .process{
+	position:relative;
+	width:20%;
+	text-align:center;
+	float:left;
+}
+#tracking .quality {
+	position:relative;
+	width:20%;
+	text-align:center;
+	float:left;
+}
+#tracking .dispatch{
+	position:relative;
+	width:20%;
+	text-align:center;
+	float:left;
+}
+#tracking .delivery{
+	position:relative;
+	width:20%;
+	text-align:center;
+	float:left;
+	margin-right:-9%;
+}
+#tracking .footer a, a:active {
+	color:grey;
+	text-decoration:none;
+	font-family: 'Tahoma', sans-serif;
+}
+#tracking .footer a:hover {
+	color:#00c4ff;
+	text-decoration:none;
+	transition:all 0.5s ease-in-out;
+}
+#tracking .footer {
+	margin-top:3%;
+	text-align:center;
+	font-weight:100;
+}
+#tracking .footer p {
+	color:grey;
+	font-size:15px;
+	font-family: 'Tahoma', sans-serif;
+	line-height:25px;
+}
+
+/*---- responsive-design -----*/
+@media(max-width:1920px){
+#tracking span.line {
+	width:157px;
+	left:32%;
+}
+#tracking .shipment{
+		margin-top:6%;
+}
+#tracking .content3 p{
+margin-left:-65%;
+}
+}
+
+@media(max-width:1680px){
+	#tracking .content3 p {
+    margin-left: -60%;
+}
+#tracking span.line {
+    width: 127px;
+    left: 37%;
+}
+}
+
+@media(max-width:1600px){
+#tracking span.line {
+    width: 117px;
+    left: 39%;
+}
+}
+
+@media(max-width:1440px){
+#tracking .content3 p {
+    margin-left: -53%;
+}
+#tracking span.line {
+    width: 99px;
+    left: 43%;
+}
+}
+
+@media (max-width: 1366px){
+#tracking span.line {
+    width: 90px;
+    left: 45%;
+}
+#tracking .shipment {
+    margin-top: 5px;
+}
+}
+
+@media (max-width: 1280px){
+#tracking span.line {
+    width: 80px;
+    left: 48%;
+	top:29%;
+}
+}
+
+@media (max-width: 1080px){
+#tracking .content {
+width: 75%;
+}
+#tracking span.line {
+    width: 88px;
+left: 46%;
+}
+}
+
+@media (max-width: 1050px){
+#tracking span.line {
+    width: 84px;
+    left: 47%;
+}
+}
+
+@media (max-width: 1024px){
+#tracking 	.content{
+		width:77%;
+	}
+	.content3 p {
+		font-size:14px;
+	}
+}
+
+@media (max-width: 991px){
+#tracking 	.content {
+    width: 80%;
+}
+#tracking span.line {
+    width: 84px;
+    left: 47%;
+}
+}
+
+@media (max-width: 900px){
+#tracking .content {
+    width: 85%;
+}
+#tracking span.line {
+    width: 78px;
+    left: 49%;
+}
+}
+
+@media (max-width: 800px){
+#tracking .content {
+    width: 95%;
+}
+#tracking .content2-header1 p {
+	margin: 0 0 0 -7%;
+}
+}
+
+@media (max-width: 768px){
+#tracking .content2-header1 {
+	width: 25%;
+}
+#tracking .content2-header1 p {
+    margin: 0 -19% 0 -10%;
+}
+#tracking span.line {
+    width: 72px;
+    left: 51%;
+}
+}
+
+@media (max-width: 736px){
+#tracking 	span.line {
+    width: 62px;
+    left: 55%;
+}
+}
+
+@media (max-width: 667px){
+#tracking 	.content2-header1 p {
+	font-size:14px;
+	}
+#tracking 	.content2-header1 span {
+    font-size: 13px;
+}
+#tracking .shipment {
+    margin-top: 13%;
+}
+#tracking .content3 p {
+    font-size: 12px;
+	margin-left: -35%;
+}
+#tracking .confirm{
+	margin-left:4%;
+}
+#tracking span.line {
+    width: 49px;
+    left: 60%;
+}
+}
+
+@media (max-width: 600px){
+#tracking 	.content1 {
+		padding:1.2em;
+	}
+#tracking .content2-header1 p {
+    font-size: 13px;
+}
+#tracking .content2-header1 span {
+    font-size: 12px;
+}
+#tracking .content2-header1 {
+    width: 24%;
+}
+#tracking .imgcircle {
+    height: 65px;
+    width: 65px;
+}
+#tracking .imgcircle img{
+	top: 26%;
+    left: 27%;
+}
+#tracking .content3 p {
+	margin-left: -38%;
+	font-size:11px;
+}
+#tracking .content {
+	height: 395px;
+}
+#tracking span.line {
+    width: 50px;
+    left: 58%;
+}
+}
+
+@media (max-width: 568px){
+#tracking 	.content{
+		height:380px;
+	}
+	.content1{
+	padding: 1em;
+}
+#tracking span.line {
+    width: 56px;
+    left: 47%;
+}
+#tracking .content2-header1 {
+    width: 23%;
+}
+#tracking .imgcircle {
+    height: 50px;
+    width: 50px;
+}
+#tracking .imgcircle img {
+    height: 25px;
+    top: 27%;
+    left: 25%;
+}
+#tracking .content3 p {
+    font-size: 10px;
+    margin-left: -46%;
+}
+#tracking .confirm {
+    margin-left: 5%;
+}
+}
+
+@media (max-width: 414px){
+#tracking 	.header {
+    margin-top: 8%;
+}
+#tracking 	.content {
+    width: 93%;
+	height:885px;
+	margin-top:9%;
+}
+#tracking 	.content1 h2 {
+	font-size:22px;
+}
+#tracking 	.content2-header1 {
+	padding:0.7em;
+    width: 80%;
+	margin-left: 3%;
+}
+#tracking 	.content2-header1 p {
+    font-size: 19px;
+}
+#tracking 	.content2-header1 span {
+    font-size: 16px;
+}
+#tracking 	.confirm {
+	width:100%;
+}
+#tracking 	.process {
+	width:100%;
+	margin: 22% 0 0 5%;
+}
+#tracking 	.quality{
+	width:100%;
+	margin: 22% 0 0 5%;
+}
+#tracking 	.dispatch{
+	width:100%;
+	margin: 22% 0 0 5%;
+}
+#tracking 	.delivery{
+	width:100%;
+	margin: 22% 0 0 5%;
+}
+#tracking 	.imgcircle {
+    height: 70px;
+    width: 70px;
+	margin-left: 35%;
+}
+#tracking 	.imgcircle img {
+    height: 30px;
+    top: 27%;
+    left: 28%;
+}
+#tracking 	span.line {
+    width: 6px;
+    left: 43.5%;
+    height: 58px;
+	top:152%;
+}
+#tracking 	.content3 p {
+    font-size: 15px;
+    margin: -12% 0 0 -72%;
+}
+#tracking 	.shipment {
+    margin-left: 16%;
+}
+#tracking 	.footer {
+	padding:1%;
+}
+#tracking 	.footer p {
+	font-size:16px;
+}
+}
+
+@media (max-width: 384px){
+#tracking 	.header {
+    margin-top: 9%;
+}
+#tracking 	.content1 h2 {
+    font-size: 21px;
+}
+#tracking 	.content3 p {
+    margin: -13% 0 0 -74%;
+}
+#tracking 	.shipment {
+    margin-top: 11%;
+}
+#tracking 	span.line {
+	top:154%;
+	left:44%;
+	height:52px;
+}
+#tracking 	.content {
+    height: 845px;
+}
+#tracking 	.footer {
+    padding: 3%;
+}
+#tracking 	.footer p {
+    font-size: 15px;
+}
+}
+
+@media (max-width: 375px){
+#tracking 	.content {
+    height: 840px;
+}
+#tracking 	.content1 h2 {
+    font-size: 20px;
+}
+#tracking 	span.line {
+    top: 149%;
+    left: 44.5%;
+    height: 51px;
+}
+#tracking 	.shipment {
+    margin-left: 17%;
+}
+}
+
+@media (max-width: 320px){
+#tracking 	.header {
+    margin-top: 10%;
+}
+#tracking 	.content{
+	margin-top: 10%;
+}
+#tracking 	.content1 {
+    padding: 1em;
+}
+#tracking 	.header h1{
+	font-size:31px;
+}
+#tracking 	.content {
+    height: 830px;
+}
+	.content1 h2 {
+    font-size: 17px;
+}
+#tracking 	.content2-header1 span {
+    font-size: 15px;
+}
+#tracking 	.content3 p {
+    margin: -16% 0 0 -79%;
+}
+#tracking 	.shipment {
+    margin-left: 19%;
+}
+#tracking 	span.line {
+    top: 115%;
+    left: 46%;
+}
+#tracking 	.footer {
+	margin-top: 1%;
+}
+#tracking 	.footer p {
+    font-size: 14px;
+}
+}

@@ -1,0 +1,34 @@
+<nav class="nav-stick">
+<div class="main-container">
+<div class="wrapper">
+<ul id="menu" style="margin-bottom: 6px;">
+  <li onclick="window.scrollTo(0,0)"><a routerLink="" style="color:white">Home</a></li>
+  <li [hidden]="isLogin" onclick="window.scrollTo(0,0)"><a routerLink="/signin" routerLinkActive="active">Signin</a></li>
+  <li [hidden]="isLogin" onclick="window.scrollTo(0,0)"><a routerLink="/signup" routerLinkActive="active">Signup</a></li>
+  <li [hidden]="!isLogin" onclick="window.scrollTo(0,0)"><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
+  <li [hidden]="!isLogin" onclick="window.scrollTo(0,0)"><a routerLink="/booking" routerLinkActive="active">Booking</a></li>
+  <li><a routerLink="/tracking" routerLinkActive="active">Tracking</a></li>
+  <li [hidden]="!isAdmin" onclick="window.scrollTo(0,0)"><a routerLink="/addTracking" routerLinkActive="active">Add Tracking</a></li>
+  <li class="service-menu" onclick="window.scrollTo(0,0)"><a href="services.html">Services<div class="dropdown-arrow"></div></a>
+    <ul>
+      <li><a href="apm-domestic-relocation.html">Domestic Moving</a></li>
+      <li><a href="apm-international-relocation.html">International Moving</a></li>
+      <li><a href="apm-home-storage.html">Home Storage</a></li>
+      <li><a href="apm-car-carriers.html">Car Carriers</a></li>
+    </ul>
+  </li>
+  <li><a routerLink="/imagegalary" routerLinkActive="active">Photo Galary</a></li>
+  <li><a href="shifting-process.html">Shifting Process<div class="dropdown-arrow"></div></a>
+    <ul>  
+      <li><a href="value-added-services.html">Value Added Services</a></li>
+      <li><a href="extra-ordinary-safety-measures.html">Extra Ordinary Safety Measures</a></li>
+      <li><a href="apm-usp.html">Our USP</a></li>
+      <li><a href="advantages.html">Advantages</a></li>
+    </ul>
+  </li>
+  <li><a routerLink="/contactus" routerLinkActive="active">Contact Us</a></li>
+  <li [hidden]="!isLogin" (click)="logout()"><a style="    color: #fff;">Logout</a></li>
+</ul>
+</div>
+</div>
+</nav>

@@ -1,0 +1,114 @@
+<div class="row">
+    <div class="col-xs-12 col-md-6" style="margin-left:10px;">
+        <div class="row" style="margin-top: 10px;">
+            <div class="col addtracking-search" style="display:flex">
+                <input placeholder="Booking Id" [(ngModel)]="addTrackingTO.bookingid" class="form-control" style="width: 153px;height: 26px;    margin-right: 4px;">
+                <input placeholder="Search Text" [(ngModel)]="addTrackingTO.searchText" class="form-control" style="width: 153px;height: 26px;    margin-right: 4px;"> &nbsp;&nbsp;
+                <button class="btn btn-login" (click)="addTracking()" style="width: 90px;height: 26px;padding: 0;">Search
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="add-tracking-list-table">
+            <table class="table table-user-information tracking-table">
+                <thead>
+                    <tr style="background-color: #eaea15;border: 3px solid #968080;">
+                        <th>Booking Id</th>
+                        <th>Location From</th>
+                        <th>Location To</th>
+                        <th>Mobile</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let obj of bookList; let i = index" (click)="viewTracking(obj)" style="cursor:pointer;">
+                        <td>{{obj.book_id}}</td>
+                        <td>{{obj.fields.fromAddress}}</td>
+                        <td>{{obj.fields.toAddress}}</td>
+                        <td>{{obj.fields.mobile}}</td>
+                        <td nowrap>
+                            <button class="btn btn-primary" (click)="editBooking(obj)">Edit
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+        <div [hidden]="isBookingNotSelected">
+            <table class="table table-user-information" style="font-size:11px;margin-bottom:-1px;">
+                <thead>
+                    <tr>
+                        <td width="15%"></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 2px;font-weight:bold;">Name</td>
+                        <td style="padding: 2px;">{{selectedBookingObj.fields.name}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;font-weight:bold;">Mobile No</td>
+                        <td style="padding: 2px;">{{selectedBookingObj.fields.mobile}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;font-weight:bold;">From Address</td>
+                        <td style="padding: 2px;">{{selectedBookingObj.fields.fromAddress}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;font-weight:bold;">To Address</td>
+                        <td style="padding: 2px;">{{selectedBookingObj.fields.toAddress}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;font-weight:bold;">Status</td>
+                        <td style="padding: 2px;">
+                            <select [(ngModel)]="selectedBookingObj.fields.status" class="form-control" style="width: 205px;font-size: 12px;height: 30px;">
+                                <option value="Approved">Approved</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Cancelled">Cancelled</option>
+                                <option value="Completed">Completed</option>
+                                <option value="NeedAdditionalInfo">Need Additional Information</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding: 6px;">
+                            <button class="btn btn-login" (click)="updateBooking()" style="width: 90px;height: 26px;padding: 0px;">Save
+                                <i class="fa fa-file"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-user-information" *ngIf="(selectedBookingObj.fields.locations && selectedBookingObj.fields.locations.length>0)">
+                <thead>
+                    <tr>
+                        <td width="12%">
+                            <b>Location History</b>
+                        </td>
+                        <td colspan="3"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let obj of selectedBookingObj.fields.locations; let i = index">
+                        <td></td>
+                        <td>{{obj}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col">
+                    <input [(ngModel)]="addLocationTO.addLocationTo" class="form-control" placeholder="Location">
+                    <button class="btn btn-login" (click)="addLocation()" style="width: 140px;height: 26px;padding: 2px;margin-top: 4px;">Add Location
+                        <i class="fa fa-truck"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.tracking-table td,.tracking-table th{
+    padding: 2px;
+    padding-left: 5px;
+    font-size: 15px;
+    padding-top: 2px
+}
+
+.tracking-table .btn{
+    padding: 2px;
+    padding: 2px;
+    font-size: 14px;
+}
+.add-tracking-list-table{
+    min-height:230px;
+    max-height:340px;
+    overflow-y:auto;
+    width:98%;
+}
+@media (max-width: 420px){
+    .add-tracking-list-table{
+        min-height:150px !important;
+        max-height:200px !important;
+        overflow-y:auto;
+        width:98%;
+    }
+    .addtracking-search{
+        display:block !important;
+    }
+}

@@ -1,0 +1,9 @@
+@media (max-width: 580px){
+    .image-galary .right{
+        width:  100% !important;
+    }
+    .image-galary .right img{
+        height:  135px !important;
+        margin-bottom: 11px;
+    }
+}
